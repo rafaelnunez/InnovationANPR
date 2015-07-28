@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">InnovationANPR</string>
+    <string name="hello_world">ANPR!</string>
+    <string name="action_settings">Settings</string>
+</resources>
