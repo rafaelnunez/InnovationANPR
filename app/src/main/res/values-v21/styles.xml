@@ -5,4 +5,11 @@
         <item name="android:colorAccent">@color/tabsScrollColor</item>
     </style>
 
+    <style name="AppTheme2" parent="android:Theme.Material.Light">
+        <item name="android:colorPrimary">#FFFFFF</item>
+        <item name="android:colorPrimaryDark">
+            #FFFFFF
+        </item>
+    </style>
+
 </resources>
