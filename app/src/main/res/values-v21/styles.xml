@@ -2,6 +2,7 @@
 <resources>
     <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
         <item name="android:colorPrimary">#03a9f4</item>
-
+        <item name="android:colorAccent">@color/tabsScrollColor</item>
     </style>
+
 </resources>
