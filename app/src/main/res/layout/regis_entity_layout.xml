@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        card_view:cardBackgroundColor="#ffffff"
+        android:elevation="30dp"
+        android:id="@+id/view"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+
+            <EditText
+                android:id="@+id/txtUser"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/tabsScrollColor"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:hint="Usuario"
+                android:textColorHint="@color/texthint"
+                android:backgroundTint="@color/BackTint"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:backgroundTint="@color/BackTint"
+                android:textColor="@color/tabsScrollColor"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:hint="Contraseña"
+                android:textColorHint="@color/texthint"
+                android:gravity="center"
+                android:layout_marginTop="30dp"  />
+
+            <EditText
+                android:id="@+id/txtConfirPassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:backgroundTint="@color/BackTint"
+                android:textColor="@color/tabsScrollColor"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:hint="Confirmar contraseña"
+                android:textColorHint="@color/texthint"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/txtCorreo"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:backgroundTint="@color/BackTint"
+                android:textColor="@color/tabsScrollColor"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:hint="Correo"
+                android:textColorHint="@color/texthint"
+                android:gravity="center"
+                android:layout_marginTop="45dp"/>
+
+
+            <Button
+                android:background="@drawable/ripple"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:layout_below="@+id/txtPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:text="Aceptar" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

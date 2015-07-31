@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:colorPrimary">#03a9f4</item>
         <item name="android:colorAccent">@color/tabsScrollColor</item>
+        <item name="android:colorPrimaryDark">#0288d1</item>
+
     </style>
 
-    <style name="AppTheme2" parent="android:Theme.Material.Light">
-        <item name="android:colorPrimary">#FFFFFF</item>
-        <item name="android:colorPrimaryDark">
-            #FFFFFF
-        </item>
+    <style name="AppTheme2" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
+
     </style>
 
 </resources>

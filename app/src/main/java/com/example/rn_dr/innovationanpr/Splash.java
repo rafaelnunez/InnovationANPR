@@ -15,6 +15,7 @@ public class Splash extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.AppTheme2);
         setContentView(R.layout.splashh);
 
         final ImageView iv=(ImageView) findViewById(R.id.imageView);
