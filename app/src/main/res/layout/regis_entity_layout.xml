@@ -26,7 +26,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical"
-            >
+        >
 
 
             <EditText
@@ -40,7 +40,8 @@
                 android:hint="Usuario"
                 android:textColorHint="@color/texthint"
                 android:backgroundTint="@color/BackTint"
-                android:gravity="center" />
+                android:gravity="center"
+            />
 
             <EditText
                 android:id="@+id/txtPassword"
@@ -55,7 +56,8 @@
                 android:hint="Contraseña"
                 android:textColorHint="@color/texthint"
                 android:gravity="center"
-                android:layout_marginTop="30dp"  />
+                android:layout_marginTop="30dp"
+             />
 
             <EditText
                 android:id="@+id/txtConfirPassword"
@@ -70,7 +72,8 @@
                 android:textColorHint="@color/texthint"
                 android:gravity="center"
                 android:layout_marginTop="40dp"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+            />
 
             <EditText
                 android:id="@+id/txtCorreo"
@@ -89,14 +92,14 @@
 
 
             <Button
-                android:background="@drawable/ripple"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton"
+                android:id="@+id/iBtnSgt"
                 android:layout_below="@+id/txtPassword"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="45dp"
-                android:text="Aceptar" />
+                android:text="Siguiente"
+                android:background="#03a9f4" />
 
         </LinearLayout>
 

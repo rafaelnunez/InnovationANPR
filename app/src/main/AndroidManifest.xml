@@ -9,22 +9,28 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Splash">
-
+        <activity android:name=".Splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
+        <activity
+            android:name=".tipo_parqueadero"
+            android:label="@string/title_activity_tipo_parqueadero" >
+        </activity>
+        <activity
+            android:name=".registra_parqueadero"
+            android:label="@string/title_activity_registra_parqueadero" >
+        </activity>
     </application>
 
 </manifest>
