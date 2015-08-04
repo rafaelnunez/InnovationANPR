@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Spinner;
 
 
 public class registra_parqueadero extends ActionBarActivity {
@@ -11,6 +12,7 @@ public class registra_parqueadero extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Spinner tipo_vehiculo = (Spinner) findViewById(R.id.SpTipoVehiculo);
         setContentView(R.layout.activity_registra_parqueadero);
     }
 

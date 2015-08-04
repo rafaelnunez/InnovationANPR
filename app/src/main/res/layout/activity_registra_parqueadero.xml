@@ -7,7 +7,7 @@
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/iBtnSgt"
+        android:id="@+id/btnSiguiente"
         android:layout_below="@+id/txtPassword"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="500dp"
@@ -100,7 +100,7 @@
             <Spinner
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/cbxTipoVehiculo"
+                android:id="@+id/SpTipoVehiculo"
                 android:textColor="@color/tabsScrollColor"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"

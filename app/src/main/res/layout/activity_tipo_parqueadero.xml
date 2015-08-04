@@ -68,7 +68,7 @@
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/iBtnSgt"
+        android:id="@+id/btnSgt"
         android:text="Siguiente"
         android:background="#03a9f4"
         android:layout_alignParentBottom="true"
