@@ -2,12 +2,13 @@ package com.example.rn_dr.innovationanpr;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Spinner;
 
 
-public class registra_parqueadero extends ActionBarActivity {
+public class registra_parqueadero extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
