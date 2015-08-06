@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".main_from_class">
+    tools:context=".main_from_class"
+    android:background="#FFFFFF">
 
     <!-- Contenido de la actividad -->
     <include layout="@layout/content_layout" />

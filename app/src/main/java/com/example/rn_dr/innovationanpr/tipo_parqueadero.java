@@ -18,16 +18,7 @@ public class tipo_parqueadero extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        boton = (Button)findViewById(R.id.btnSigui);
         setContentView(R.layout.activity_tipo_parqueadero);
-
-        boton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(tipo_parqueadero.this, tipo_cobro.class);
-                startActivity(intent);
-            }
-        });
     }
 
     @Override

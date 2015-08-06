@@ -19,7 +19,7 @@ public class Tab2 extends Fragment {
         btnsiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), PreConfigEntity.class);
+                Intent intent = new Intent(getActivity(), registra_parqueadero.class);
                 startActivity(intent);
             }
         });
