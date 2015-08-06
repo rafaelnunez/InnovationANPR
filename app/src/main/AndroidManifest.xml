@@ -9,7 +9,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".PreConfigEntity"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".MainActivity"
@@ -34,6 +34,10 @@
         <activity
             android:name=".registra_parqueadero"
             android:label="@string/title_activity_registra_parqueadero" >
+        </activity>
+        <activity
+            android:name=".main_from_class"
+            android:label="@string/title_activity_main_from_class" >
         </activity>
     </application>
 
