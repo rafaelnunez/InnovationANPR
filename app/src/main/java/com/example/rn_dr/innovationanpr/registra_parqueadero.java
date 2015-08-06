@@ -1,20 +1,30 @@
 package com.example.rn_dr.innovationanpr;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 
 public class registra_parqueadero extends AppCompatActivity {
-
+    private Button btnsiguiente;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Spinner tipo_vehiculo = (Spinner) findViewById(R.id.SpTipoVehiculo);
         setContentView(R.layout.activity_registra_parqueadero);
+        btnsiguiente = (Button)findViewById(R.id.btnNetx);
+        btnsiguiente.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(registra_parqueadero.this, tipo_parqueadero.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

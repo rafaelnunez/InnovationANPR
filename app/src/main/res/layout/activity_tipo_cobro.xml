@@ -1,0 +1,296 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    tools:context="com.example.rn_dr.innovationanpr.tipo_cobro">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#03a9f4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONFIGURACIÓN"
+                    android:id="@+id/textView4"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="normal|italic"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Configura tu tipo de cobro:"
+                    android:id="@+id/textView5"
+                    android:textSize="18dp"
+                    android:layout_below="@+id/textView4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_marginBottom="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                card_view:cardBackgroundColor="#ffffff"
+                android:elevation="10dp"
+                android:id="@+id/view"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AUTOMÓVIL"
+                        android:id="@+id/textView3"
+                        android:textColor="#212121"
+                    />
+
+                    <EditText
+                        android:id="@+id/txtValHoraAuto"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/tabsScrollColor"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:hint="Valor por hora"
+                        android:textColorHint="@color/texthint"
+                        android:backgroundTint="@color/BackTint"
+                        android:gravity="center"
+                        android:layout_marginLeft="30dp"
+                    />
+
+                    <EditText
+                        android:id="@+id/txtValDiaAuto"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/tabsScrollColor"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:hint="Valor por día"
+                        android:textColorHint="@color/texthint"
+                        android:backgroundTint="@color/BackTint"
+                        android:ems="10"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                    />
+
+                    <EditText
+                        android:id="@+id/txtValMesAuto"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/tabsScrollColor"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:hint="Valor del mes"
+                        android:textColorHint="@color/texthint"
+                        android:backgroundTint="@color/BackTint"
+                        android:ems="10"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_marginBottom="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                card_view:cardBackgroundColor="#ffffff"
+                android:elevation="50dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MOTOCICLETA"
+                        android:id="@+id/textMoto"
+                        android:textColor="#212121"
+                        />
+
+                    <EditText
+                        android:id="@+id/txtValHoraMoto"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/tabsScrollColor"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:hint="Valor por hora"
+                        android:textColorHint="@color/texthint"
+                        android:backgroundTint="@color/BackTint"
+                        android:gravity="center"
+                        android:layout_marginLeft="30dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/txtValDiaMoto"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/tabsScrollColor"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:hint="Valor por día"
+                        android:textColorHint="@color/texthint"
+                        android:backgroundTint="@color/BackTint"
+                        android:ems="10"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        />
+
+                    <EditText
+                        android:id="@+id/txtValMesMoto"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/tabsScrollColor"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:hint="Valor del mes"
+                        android:textColorHint="@color/texthint"
+                        android:backgroundTint="@color/BackTint"
+                        android:ems="10"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_marginBottom="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                card_view:cardBackgroundColor="#ffffff"
+                android:elevation="10dp"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BICICLETA"
+                        android:id="@+id/texCicla"
+                        android:textColor="#212121"
+                        />
+
+                    <EditText
+                        android:id="@+id/txtValHoraCicla"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/tabsScrollColor"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:hint="Valor por hora"
+                        android:textColorHint="@color/texthint"
+                        android:backgroundTint="@color/BackTint"
+                        android:gravity="center"
+                        android:layout_marginLeft="30dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/txtValDiaCicla"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/tabsScrollColor"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:hint="Valor por día"
+                        android:textColorHint="@color/texthint"
+                        android:backgroundTint="@color/BackTint"
+                        android:ems="10"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        />
+
+                    <EditText
+                        android:id="@+id/txtValMesCicla"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/tabsScrollColor"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:hint="Valor por Jornada"
+                        android:textColorHint="@color/texthint"
+                        android:backgroundTint="@color/BackTint"
+                        android:ems="10"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSgt"
+                android:text="Siguiente"
+                android:background="#03a9f4"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp" />
+        </LinearLayout>
+
+    </ScrollView>
+    >
+
+</RelativeLayout>

@@ -39,6 +39,10 @@
             android:name=".main_from_class"
             android:label="@string/title_activity_main_from_class" >
         </activity>
+        <activity
+            android:name=".tipo_cobro"
+            android:label="@string/title_activity_tipo_cobro" >
+        </activity>
     </application>
 
 </manifest>

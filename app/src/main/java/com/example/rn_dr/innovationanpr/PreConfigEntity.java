@@ -12,7 +12,7 @@ public class PreConfigEntity extends AppCompatActivity{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.regis_entity_2_layout);
+        setContentView(R.layout.activity_registra_parqueadero);
     }
 
 }

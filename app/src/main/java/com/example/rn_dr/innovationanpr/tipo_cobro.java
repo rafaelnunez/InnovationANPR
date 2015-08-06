@@ -8,32 +8,22 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RadioButton;
+import android.widget.ImageButton;
 
 
-public class tipo_parqueadero extends AppCompatActivity {
-    private Button boton;
-    private RadioButton rbPrivado;
-    private RadioButton rbPublico;
+public class tipo_cobro extends AppCompatActivity {
+    //private Button siguiente;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        boton = (Button)findViewById(R.id.btnSigui);
-        setContentView(R.layout.activity_tipo_parqueadero);
-
-        boton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(tipo_parqueadero.this, tipo_cobro.class);
-                startActivity(intent);
-            }
-        });
+        setContentView(R.layout.activity_tipo_cobro);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_tipo_parqueadero, menu);
+        getMenuInflater().inflate(R.menu.menu_tipo_cobro, menu);
         return true;
     }
 
