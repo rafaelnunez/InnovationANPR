@@ -4,7 +4,7 @@
         <item name="android:colorPrimary">#03a9f4</item>
         <item name="android:colorAccent">@color/tabsScrollColor</item>
         <item name="android:colorPrimaryDark">#0288d1</item>
-
+        <item name="android:windowTranslucentNavigation">true</item>
     </style>
 
     <style name="AppTheme2" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">

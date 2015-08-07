@@ -46,15 +46,15 @@
             <ImageButton
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_camera_party_mode_grey600_24dp"
                 android:background="@drawable/btncircular"
                 android:layout_marginTop="100dp"
-                android:id="@+id/imageButton" />
+                android:id="@+id/imageButton"
+                android:src="@drawable/ic_ic_camera_party_mode_grey600_48dp" />
 
             <ImageButton
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/microphone_outline"
+                android:src="@drawable/abc_ic_voice_search_api_mtrl_alpha"
                 android:layout_alignTop="@+id/imageButton"
                 android:layout_alignRight="@+id/txtPlaca"
                 android:layout_alignEnd="@+id/txtPlaca"
