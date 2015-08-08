@@ -10,18 +10,22 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 public class main_from_class extends AppCompatActivity {
 
     private Toolbar appbar;
     private DrawerLayout drawerLayout;
     private NavigationView navView;
+    static String Target_Scale = "Scale";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_from_class);
-
+        final Animation animScale = AnimationUtils.loadAnimation(this, R.anim.rotate_ivlog);
         appbar = (Toolbar)findViewById(R.id.appbar);
         setSupportActionBar(appbar);
 
@@ -30,31 +34,8 @@ public class main_from_class extends AppCompatActivity {
 
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
 
-        /*
-        //Eventos del Drawer Layout
-        drawerLayout.setDrawerListener(new DrawerLayout.DrawerListener() {
-            @Override
-            public void onDrawerSlide(View drawerView, float slideOffset) {
-
-            }
-
-            @Override
-            public void onDrawerOpened(View drawerView) {
-
-            }
-
-            @Override
-            public void onDrawerClosed(View drawerView) {
-
-            }
-
-            @Override
-            public void onDrawerStateChanged(int newState) {
-
-            }
-        });
-        */
-
+        ImageView imageViewlog = (ImageView)findViewById(R.id.ivlog);
+        imageViewlog.startAnimation(animScale);
         navView = (NavigationView)findViewById(R.id.navview);
         navView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
@@ -93,9 +74,7 @@ public class main_from_class extends AppCompatActivity {
                             menuItem.setChecked(true);
                             getSupportActionBar().setTitle(menuItem.getTitle());
                         }
-
                         drawerLayout.closeDrawers();
-
                         return true;
                     }
                 });
