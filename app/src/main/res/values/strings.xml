@@ -4,10 +4,10 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_tipo_parqueadero">tipo_parqueadero</string>
     <string name="title_activity_registra_parqueadero">registra_parqueadero</string>
-    <string name="title_activity_main_from_class">main_from_class</string>
+    <string name="title_activity_main_from_class">Gestion Entrada y Salida</string>
     <string name="seccion_1">Gestion Entrada y Salida</string>
-    <string name="seccion_2">Consultas</string>
-    <string name="seccion_3">Sección 3</string>
+    <string name="seccion_2">Libero</string>
+    <string name="seccion_3">Consultas</string>
     <string name="otras_opciones">Otras opciones</string>
     <string name="opcion_1">Configuración</string>
     <string name="opcion_2">Acerca de</string>

@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -24,6 +25,7 @@ public class main_from_class extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main_from_class);
         final Animation animScale = AnimationUtils.loadAnimation(this, R.anim.rotate_ivlog);
         appbar = (Toolbar)findViewById(R.id.appbar);
@@ -33,7 +35,11 @@ public class main_from_class extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
-
+        Fragment fragment = null;
+        fragment = new Fragment1();
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.content_frame, fragment)
+                .commit();
         ImageView imageViewlog = (ImageView)findViewById(R.id.ivlog);
         imageViewlog.startAnimation(animScale);
         navView = (NavigationView)findViewById(R.id.navview);

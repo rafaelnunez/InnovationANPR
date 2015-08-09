@@ -8,6 +8,7 @@
     tools:context=".main_from_class"
     tools:showIn="@layout/activity_main_from_class">
 
+
     <!-- Toolbar -->
     <android.support.v7.widget.Toolbar
         xmlns:app="http://schemas.android.com/apk/res-auto"

@@ -6,15 +6,15 @@
         <item
 
             android:id="@+id/menu_seccion_1"
-            android:icon="@drawable/ic_menu"
+            android:icon="@drawable/ic_icon_button_input_output"
             android:title="@string/seccion_1"/>
         <item
             android:id="@+id/menu_seccion_2"
-            android:icon="@drawable/ic_menu"
+            android:icon="@drawable/ic_ico_libero"
             android:title="@string/seccion_2"/>
         <item
             android:id="@+id/menu_seccion_3"
-            android:icon="@drawable/ic_menu"
+            android:icon="@drawable/logo_consulta_p"
             android:title="@string/seccion_3"/>
     </group>
 
@@ -24,11 +24,11 @@
         <menu>
             <item
                 android:id="@+id/menu_opcion_1"
-                android:icon="@drawable/ic_menu"
+                android:icon="@drawable/ic_settings_black_24dp"
                 android:title="@string/opcion_1"/>
             <item
                 android:id="@+id/menu_opcion_2"
-                android:icon="@drawable/ic_menu"
+                android:icon="@drawable/ic_info_outline_black_24dp"
                 android:title="@string/opcion_2"/>
         </menu>
     </item>
