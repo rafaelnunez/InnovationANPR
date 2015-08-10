@@ -9,24 +9,46 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 
 public class registra_parqueadero extends AppCompatActivity {
     private Button btnsiguiente;
+    private CheckBox CHAUTO;
+    private CheckBox CHMOTO;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registra_parqueadero);
-        btnsiguiente = (Button)findViewById(R.id.btnNetx);
+        /*btnsiguiente = (Button)findViewById(R.id.btnNetx);
         btnsiguiente.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(registra_parqueadero.this, tipo_parqueadero.class);
                 startActivity(intent);
             }
-        });
+        });*/
     }
+    public void CheckBoxSelected(View view) {
+        boolean checked = ((CheckBox) view).isChecked();
+        switch(view.getId()) {
+            case R.id.CHMoto:
+                if (checked){
+                    Toast.makeText(getApplicationContext(), "CheckBox automovil seleccionado.",
+                            Toast.LENGTH_LONG).show();
+                    btnsiguiente = (Button)findViewById(R.id.btnNetx);
+                    btnsiguiente.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View view) {
+                            Intent intent = new Intent(registra_parqueadero.this, tipo_cobro.class);
+                            startActivity(intent);
+                        }
+                    });
+                }
+                break;
 
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

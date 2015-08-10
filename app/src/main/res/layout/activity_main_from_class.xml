@@ -7,10 +7,11 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context=".main_from_class"
-    android:background="#FFFFFF">
+     >
 
     <!-- Contenido de la actividad -->
-    <include layout="@layout/content_layout" />
+    <include layout="@layout/content_layout"
+        />
 
     <!-- Navigation View -->
     <android.support.design.widget.NavigationView
@@ -20,6 +21,8 @@
         android:fitsSystemWindows="true"
         android:layout_gravity="start"
         app:headerLayout="@layout/header_navview"
-        app:menu="@menu/menu_main_from_class" />
+        app:menu="@menu/menu_main_from_class"
+        android:theme="@style/AppTheme2"
+        />
 
 </android.support.v4.widget.DrawerLayout>

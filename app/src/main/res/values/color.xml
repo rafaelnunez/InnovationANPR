@@ -6,4 +6,5 @@
     <color name="texthint">#B6B6B6</color>
     <color name="BackTint">#b2ebf2</color>
     <color name="android:colorPrimaryDark">#0097a7</color>
+    <color name="background">#FFFFFF</color>
 </resources>
