@@ -8,7 +8,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@color/ColorPrimary">
+        android:background="@color/ColorPrimary"
+        android:id="@+id/rLayout"
+        >
 
     <ImageView
         android:layout_width="130dp"

@@ -19,7 +19,6 @@ public class Splash extends Activity {
         setTheme(R.style.AppTheme2);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.splashh);
-
         final ImageView iv=(ImageView) findViewById(R.id.imageView);
         final ImageView iv2=(ImageView) findViewById(R.id.imageView2);
         final Animation an= AnimationUtils.loadAnimation(getApplication(),R.anim.rotate);
