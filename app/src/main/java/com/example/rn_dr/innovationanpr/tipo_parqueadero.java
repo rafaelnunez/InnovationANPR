@@ -13,12 +13,18 @@ import android.widget.RadioButton;
 
 public class tipo_parqueadero extends AppCompatActivity {
     private Button boton;
-    private RadioButton rbPrivado;
-    private RadioButton rbPublico;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tipo_parqueadero);
+        boton = (Button)findViewById(R.id.btnSigui);
+        boton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(tipo_parqueadero.this, tipo_cobro.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override

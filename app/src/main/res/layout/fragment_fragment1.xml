@@ -3,11 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.rn_dr.innovationanpr.Fragment1">
+    tools:context="com.example.rn_dr.innovationanpr.Fragment1"
+    >
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="250dp"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:paddingTop="16dp"
@@ -23,7 +24,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="250dp"
             android:layout_gravity="center"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
@@ -39,17 +40,18 @@
                 android:backgroundTint="@color/BackTint"
                 android:gravity="center"
                 android:layout_gravity="center_horizontal|top"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="40dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true" />
 
             <ImageButton
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:src="@drawable/ic_ic_camera_party_mode_grey600_48dp"
                 android:background="@drawable/btncircular"
                 android:layout_marginTop="100dp"
                 android:id="@+id/imageButton"
-                android:src="@drawable/ic_ic_camera_party_mode_grey600_48dp" />
+                android:layout_alignStart="@id/txtPlaca" />
 
             <ImageButton
                 android:layout_width="50dp"
@@ -58,14 +60,108 @@
                 android:layout_alignTop="@+id/imageButton"
                 android:layout_alignRight="@+id/txtPlaca"
                 android:layout_alignEnd="@+id/txtPlaca"
-                android:background="@drawable/btncircular" />
+                android:background="@drawable/btncircular"
+                android:id="@+id/imageButton2" />
+
+            <RadioGroup
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:baselineAligned="false"
+                android:layout_alignBottom="@+id/imageButton2"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/rbgroupregises">
 
 
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:id="@+id/rbAutomovil"
+                    android:textColor="@color/tabsScrollColor"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:buttonTint="@color/ColorPrimary" />
 
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:id="@+id/rbMotocicleta"
+                    android:textColor="@color/tabsScrollColor"
+                    android:layout_marginLeft="10dp"
+                    android:buttonTint="@color/ColorPrimary" />
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="B"
+                    android:id="@+id/rbBicicleta"
+                    android:textColor="@color/tabsScrollColor"
+                    android:layout_marginLeft="13dp"
+                    android:layout_gravity="center_vertical"
+                    android:buttonTint="@color/ColorPrimary" />
+
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="180dp"
+                android:layout_centerHorizontal="true"
+
+                android:text="Aceptar"
+                android:background="#03a9f4" />
 
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:gravity="center|center_vertical">
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/ic_account"
+            android:background="@drawable/btncircularuser"
+            android:id="@+id/ibUser"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de cliente"
+            android:backgroundTint="@color/BackTint"
+            android:textColorHint="@color/texthint"
+            android:textSize="25dp"
+            android:layout_alignBottom="@+id/ibUser"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6" />
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="350dp"
+            android:src="@drawable/ic_icono_coche"
+            android:background="@drawable/btncircularuser"
+            android:id="@+id/ibPlaca"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Matricula de vehiculo"
+            android:backgroundTint="@color/BackTint"
+            android:textColorHint="@color/texthint"
+            android:textSize="25dp"
+            android:id="@+id/textView6"
+            android:layout_alignBottom="@+id/ibPlaca"
+            android:layout_toRightOf="@+id/ibPlaca"
+            android:layout_toEndOf="@+id/ibPlaca" />
+    </RelativeLayout>
 
 </FrameLayout>

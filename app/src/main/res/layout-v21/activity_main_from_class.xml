@@ -22,6 +22,7 @@
         android:layout_gravity="start"
         app:headerLayout="@layout/header_navview"
         app:menu="@menu/menu_main_from_class"
-        android:theme="@style/AppTheme2" />
+        android:theme="@style/AppTheme2"
+    />
 
 </android.support.v4.widget.DrawerLayout>

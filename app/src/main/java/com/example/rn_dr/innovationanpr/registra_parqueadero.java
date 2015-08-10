@@ -9,11 +9,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 
 public class registra_parqueadero extends AppCompatActivity {
     private Button btnsiguiente;
+    private CheckBox CHAUTO;
+    private CheckBox CHMOTO;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +30,18 @@ public class registra_parqueadero extends AppCompatActivity {
             }
         });
     }
+    public void CheckBoxSelected(View view) {
+        boolean checked = ((CheckBox) view).isChecked();
+        switch(view.getId()) {
+            case R.id.CHMoto:
+                if (checked){
+                    Toast.makeText(getApplicationContext(), "CheckBox Motocicleta seleccionado.",
+                            Toast.LENGTH_LONG).show();
+                }
+                break;
 
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

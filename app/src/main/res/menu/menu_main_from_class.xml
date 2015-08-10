@@ -4,7 +4,6 @@
     >
     <group android:checkableBehavior="single">
         <item
-
             android:id="@+id/menu_seccion_1"
             android:icon="@drawable/ic_icon_button_input_output"
             android:title="@string/seccion_1"/>

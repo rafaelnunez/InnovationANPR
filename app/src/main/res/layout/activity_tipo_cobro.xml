@@ -19,13 +19,14 @@
                 android:layout_width="fill_parent"
                 android:layout_height="80dp"
                 android:layout_gravity="center_horizontal"
-                android:background="#03a9f4">
+                android:background="#1976d2">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="CONFIGURACIÓN"
                     android:id="@+id/textView4"
+                    android:fontFamily="Roboto Medium"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
                     android:textStyle="normal|italic"
@@ -38,6 +39,7 @@
                     android:text="Configura tu tipo de cobro:"
                     android:id="@+id/textView5"
                     android:textSize="18dp"
+                    android:fontFamily="Roboto Regular"
                     android:layout_below="@+id/textView4"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
@@ -62,21 +64,33 @@
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center_vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="AUTOMÓVIL"
-                        android:id="@+id/textView3"
-                        android:textColor="#212121"
-                    />
+                    android:layout_gravity="center_vertical"
+                    >
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#2196f3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PRECIO CARRO"
+                            android:id="@+id/textView8"
+                            android:textStyle="normal|italic"
+                            android:textSize="20dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="10dp" />
+                    </RelativeLayout>
 
                     <EditText
                         android:id="@+id/txtValHoraAuto"
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:inputType="numberSigned"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="10dp"
                         android:textColor="@color/tabsScrollColor"
                         android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true"
@@ -84,6 +98,7 @@
                         android:textColorHint="@color/texthint"
                         android:backgroundTint="@color/BackTint"
                         android:gravity="center"
+                        android:textColorLink="#2196f3"
                         android:layout_marginLeft="30dp"
                     />
 
@@ -143,13 +158,24 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="MOTOCICLETA"
-                        android:id="@+id/textMoto"
-                        android:textColor="#212121"
-                        />
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#2196f3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PRECIO MOTOCICLETA"
+                            android:id="@+id/textView1"
+                            android:textStyle="normal|italic"
+                            android:textSize="20dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="10dp" />
+                    </RelativeLayout>
 
                     <EditText
                         android:id="@+id/txtValHoraMoto"
@@ -220,13 +246,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="BICICLETA"
-                        android:id="@+id/texCicla"
-                        android:textColor="#212121"
-                        />
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#2196f3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="PRECIO BICICLETA"
+                            android:id="@+id/textView2"
+                            android:textStyle="normal|italic"
+                            android:textSize="20dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
 
                     <EditText
                         android:id="@+id/txtValHoraCicla"
@@ -281,13 +318,14 @@
             </android.support.v7.widget.CardView>
             <Button
                 android:layout_width="300dp"
-                android:layout_height="wrap_content"
+                android:layout_height="fill_parent"
                 android:id="@+id/btnSgt"
-                android:text="Siguiente"
+                android:text="Finalizar"
                 android:background="#03a9f4"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="25dp" />
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="center_horizontal" />
         </LinearLayout>
 
     </ScrollView>
