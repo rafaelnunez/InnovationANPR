@@ -17,7 +17,7 @@
             android:layout_width="fill_parent"
             android:layout_height="80dp"
             android:layout_gravity="center_horizontal"
-            android:background="#03a9f4">
+            android:background="#1976d2">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -173,7 +173,7 @@
             android:layout_centerHorizontal="true"
             android:background="#03a9f4"
             android:layout_gravity="center"
-            android:layout_marginBottom="25dp" />
+        />
     </LinearLayout>
 
 

@@ -28,7 +28,6 @@
             android:layout_gravity="center"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-
             >
 
             <EditText
@@ -52,8 +51,7 @@
                 android:background="@drawable/btncircular"
                 android:layout_marginTop="100dp"
                 android:id="@+id/imageButton"
-                android:layout_alignLeft="@+id/txtPlaca"
-                />
+                android:layout_alignStart="@id/txtPlaca" />
 
             <ImageButton
                 android:layout_width="50dp"
@@ -114,10 +112,11 @@
                 android:layout_width="100dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:background="@drawable/btnrectangular"
                 android:layout_marginTop="180dp"
                 android:layout_centerHorizontal="true"
-                android:text="Aceptar" />
+
+                android:text="Aceptar"
+                android:background="#03a9f4" />
 
         </RelativeLayout>
 

@@ -143,7 +143,8 @@
             android:textSize="25dp"
             android:layout_alignBottom="@+id/ibUser"
             android:layout_alignLeft="@+id/textView6"
-            android:layout_alignStart="@+id/textView6" />
+            android:layout_alignStart="@+id/textView6"
+            android:layout_marginBottom="15dp" />
         <ImageButton
             android:layout_width="70dp"
             android:layout_height="70dp"
@@ -161,7 +162,8 @@
             android:id="@+id/textView6"
             android:layout_alignBottom="@+id/ibPlaca"
             android:layout_toRightOf="@+id/ibPlaca"
-            android:layout_toEndOf="@+id/ibPlaca" />
+            android:layout_toEndOf="@+id/ibPlaca"
+            android:layout_marginBottom="15dp" />
     </RelativeLayout>
 
 </FrameLayout>
