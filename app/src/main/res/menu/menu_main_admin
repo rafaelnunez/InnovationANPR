@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_seccion_1"
+            android:icon="@drawable/ic_logo_consulta"
+        android:title="@string/opc1"/>
+        <item
+            android:id="@+id/menu_seccion_2"
+            android:icon="@drawable/ic_ico_libero"
+            android:title="@string/opc2"/>
+     <!--   <item
+            android:id="@+id/menu_seccion_3"
+            android:icon="@drawable/ic_logo_consulta"
+            android:title="@string/seccion_3"/>
+      -->
+    </group>
+
+    <item
+        android:id="@+id/navigation_subheader"
+        android:title="@string/otras_opciones">
+        <menu>
+            <item
+                android:id="@+id/menu_opcion_1"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/opcion_1"/>
+            <item
+                android:id="@+id/menu_opcion_2"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="Acerca de"/>
+        </menu>
+    </item>
+</menu>
