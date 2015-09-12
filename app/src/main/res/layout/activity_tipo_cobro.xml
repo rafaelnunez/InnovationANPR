@@ -75,7 +75,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="PRECIO CARRO"
+                            android:text="PRECIO AUTOMÓVIL"
                             android:id="@+id/textView8"
                             android:textStyle="normal|italic"
                             android:textSize="20dp"

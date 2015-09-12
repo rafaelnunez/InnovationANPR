@@ -43,6 +43,10 @@
             android:name=".tipo_cobro"
             android:label="@string/title_activity_tipo_cobro" >
         </activity>
+        <activity
+            android:name=".main_admin"
+            android:label="@string/title_activity_main_admin" >
+        </activity>
     </application>
 
 </manifest>

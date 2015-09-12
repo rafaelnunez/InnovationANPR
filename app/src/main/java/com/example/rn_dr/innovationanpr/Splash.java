@@ -56,7 +56,7 @@ public class Splash extends Activity {
             public void onAnimationEnd(Animation animation) {
                 iv.startAnimation(an2);
                 finish();
-                Intent i = new Intent(getApplication(),MainActivity.class);
+                Intent i = new Intent(getApplication(),main_admin.class);
                 startActivity(i);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
