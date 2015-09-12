@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#ff5722">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/iconocoche"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:id="@+id/ivlog" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User ANPR"
+            android:id="@+id/textViewadmin"
+            android:textSize="14sp"
+            android:layout_below="@+id/imageButtonadmin"
+            android:layout_alignLeft="@+id/imageButtonadmin"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserANPR@gmail.com"
+            android:id="@+id/tvcorreo"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"
+            android:layout_below="@+id/textViewadmin"
+            android:layout_alignLeft="@+id/textViewadmin"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFFFFF"/>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ibser_admin_ovalo"
+            android:id="@+id/imageButtonadmin"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="16dp" />
+    </RelativeLayout>
+</FrameLayout>
