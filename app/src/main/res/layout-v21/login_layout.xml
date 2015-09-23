@@ -21,53 +21,57 @@
         android:id="@+id/view"
         >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            >
 
 
-         <EditText
-            android:id="@+id/txtUser"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/tabsScrollColor"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:hint="Usuario"
-            android:textColorHint="@color/texthint"
-            android:backgroundTint="@color/BackTint"
-            android:gravity="center" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_alignTop="@+id/view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
 
-          <EditText
-            android:id="@+id/txtPassword"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:backgroundTint="@color/BackTint"
-            android:textColor="@color/tabsScrollColor"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:hint="Contraseña"
-            android:textColorHint="@color/texthint"
-            android:gravity="center"
-            android:layout_marginTop="70dp"  />
 
-           <Button
-            android:background="@drawable/ripple"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txtPassword"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="102dp"
-            android:text="Aceptar"
-            android:id="@+id/btnAceptar" />
+     <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/tabsScrollColor"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Usuario"
+        android:textColorHint="@color/texthint"
+        android:backgroundTint="@color/BackTint"
+        android:gravity="center" />
 
-        </LinearLayout>
+      <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:backgroundTint="@color/BackTint"
+        android:textColor="@color/tabsScrollColor"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Contraseña"
+        android:textColorHint="@color/texthint"
+        android:gravity="center"
+        android:layout_marginTop="70dp"  />
+
+       <Button
+        android:background="@drawable/ripple"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="102dp"
+        android:text="Aceptar"
+        android:id="@+id/btnAceptar" />
+
+    </LinearLayout>
 
     </android.support.v7.widget.CardView>
 

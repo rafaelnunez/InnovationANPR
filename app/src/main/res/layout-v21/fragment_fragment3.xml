@@ -4,293 +4,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
-    <ScrollView
+    <!--<ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+         >
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true">
-            <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="80dp"
-                android:layout_gravity="center_horizontal"
-                android:background="#03a9f4">
+            android:layout_centerHorizontal="true">-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="CONSULTAS"
-                    android:id="@+id/textView4"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:textStyle="normal|italic"
-                    android:textSize="25dp"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Elige el tipo de consulta:"
-                    android:id="@+id/textView5"
-                    android:textStyle="normal|italic"
-                    android:textSize="18dp"
-                    android:fontFamily="Roboto Regular"
-                    android:layout_below="@+id/textView4"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginTop="10dp"
-                    />
-            </RelativeLayout>
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                card_view:cardBackgroundColor="#ffffff"
-                android:elevation="30dp">
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="FINANZAS"
-                        android:gravity="center"
-                        android:id="@+id/textView7"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:textStyle="normal|italic"
-                        android:textSize="22dp"
-                        android:textColor="#ff000000"
-                        />
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                card_view:cardBackgroundColor="#ffffff"
-                android:elevation="30dp"
-                android:id="@+id/view">
                 <HorizontalScrollView
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    >
+                     >
+
                     <LinearLayout
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:orientation="horizontal">
-                        <android.support.v7.widget.CardView
-                            android:layout_height="220dp"
-                            android:layout_width="200dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:paddingTop="16dp"
-                            android:paddingBottom="16dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            card_view:cardBackgroundColor="#ffc107">
-                            <RelativeLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent">
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="GANANCIAS POR TIEMPO"
-                                    android:id="@+id/textView6"
-                                    android:textStyle="normal|italic"
-                                    android:textSize="25dp"
-                                    android:gravity="center_horizontal"
-                                    android:elevation="15dp"
-                                    android:layout_centerVertical="true"
-                                    android:layout_alignParentLeft="true"
-                                    android:layout_alignParentStart="true"
-                                    />
-                            </RelativeLayout>
-                        </android.support.v7.widget.CardView>
+                        android:orientation="horizontal"
+                         >
 
-                        <android.support.v7.widget.CardView
-                            android:layout_height="220dp"
-                            android:layout_width="200dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:paddingTop="20dp"
-                            android:paddingBottom="16dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            card_view:cardBackgroundColor="#ff2530ff">
-                            <RelativeLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent">
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="GANANCIAS POR VEHÍCULO"
-                                    android:id="@+id/textView9"
-                                    android:textStyle="normal|italic"
-                                    android:textSize="25dp"
-                                    android:gravity="center_horizontal"
-                                    android:elevation="15dp"
-                                    android:layout_centerVertical="true"
-                                    android:layout_alignParentLeft="true"
-                                    android:layout_alignParentStart="true"
-                                    />
-                            </RelativeLayout>
-                        </android.support.v7.widget.CardView>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/fondouno"
+                            android:layout_marginLeft="5dp"
+                             />
 
-                        <android.support.v7.widget.CardView
-                            android:layout_height="220dp"
-                            android:layout_width="200dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:paddingTop="20dp"
-                            android:paddingBottom="16dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            card_view:cardBackgroundColor="#ffff2400">
-                            <RelativeLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent">
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="GANANCIAS GLOBALES"
-                                    android:id="@+id/textView10"
-                                    android:textStyle="normal|italic"
-                                    android:textSize="25dp"
-                                    android:gravity="center_horizontal"
-                                    android:elevation="15dp"
-                                    android:layout_centerVertical="true"
-                                    android:layout_alignParentLeft="true"
-                                    android:layout_alignParentStart="true"
-                                    />
-                            </RelativeLayout>
-                        </android.support.v7.widget.CardView>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/fondodos"
+                            android:layout_marginLeft="60dp"
+                             />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/fondotres"
+                            android:layout_marginLeft="80dp"
+                             />
+
                     </LinearLayout>
+
                 </HorizontalScrollView>
-            </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                card_view:cardBackgroundColor="#ffffff"
-                android:elevation="30dp">
-                <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CONTABILIDAD"
-                        android:gravity="center"
-                        android:id="@+id/textView8"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:textStyle="normal|italic"
-                        android:textSize="22dp"
-                        android:textColor="#ff000000"
-                        />
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                card_view:cardBackgroundColor="#ffffff"
-                android:elevation="30dp"
-                android:id="@+id/v">
-                <HorizontalScrollView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    >
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:orientation="horizontal">
-                        <android.support.v7.widget.CardView
-                            android:layout_height="220dp"
-                            android:layout_width="200dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:paddingTop="16dp"
-                            android:paddingBottom="16dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            card_view:cardBackgroundColor="#ffffae38">
-                        </android.support.v7.widget.CardView>
+<!--        </LinearLayout>
 
-                        <android.support.v7.widget.CardView
-                            android:layout_height="220dp"
-                            android:layout_width="200dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:paddingTop="20dp"
-                            android:paddingBottom="16dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            card_view:cardBackgroundColor="#ffff46e4">
-                        </android.support.v7.widget.CardView>
-
-                        <android.support.v7.widget.CardView
-                            android:layout_height="220dp"
-                            android:layout_width="200dp"
-                            android:paddingLeft="16dp"
-                            android:paddingRight="16dp"
-                            android:paddingTop="20dp"
-                            android:paddingBottom="16dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            card_view:cardBackgroundColor="#ff71ff64">
-                        </android.support.v7.widget.CardView>
-                    </LinearLayout>
-                </HorizontalScrollView>
-            </android.support.v7.widget.CardView>
-        </LinearLayout>
-    </ScrollView>
+    </ScrollView>-->
 
 </FrameLayout>
