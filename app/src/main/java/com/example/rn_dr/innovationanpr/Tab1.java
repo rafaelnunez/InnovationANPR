@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.rn_dr.innovationanpr.R;
+import com.google.gson.Gson;
 
 import java.util.Objects;
 
@@ -33,12 +35,16 @@ public class Tab1 extends Fragment {
             public void onClick(View view) {
 
                 //Log.i("Pruebalogggg",txtusuario.getText().toString());
-                if(txtusuario.getText().toString().equals(user) && txtcontraseña.getText().toString().equals(pass)) {
+                if(txtusuario.getText().toString().equals("admin") && txtcontraseña.getText().toString().equals("123")) {
+                    Intent intent = new Intent(getActivity(), main_admin.class);
+                    startActivity(intent);
+                }else if(txtusuario.getText().toString().equals("portero") && txtcontraseña.getText().toString().equals("123")){
                     Intent intent = new Intent(getActivity(), main_from_class.class);
                     startActivity(intent);
                 }else{
-                    Intent intent = new Intent(getActivity(), main_admin.class);
-                    startActivity(intent);
+                    FragmentManager fragmentManager = getFragmentManager();
+                    DialogoPersonalizado dialogo = new DialogoPersonalizado();
+                    dialogo.show(fragmentManager, "tagPersonalizado");
                 }
 
             }

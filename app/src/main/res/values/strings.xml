@@ -20,6 +20,8 @@
     <string name="title_activity_tipo_cobro">tipo_cobro</string>
     <string name="title_activity_main_admin">main_admin</string>
 
+    <string name="dialogo_linea_1">Error</string>
+
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
