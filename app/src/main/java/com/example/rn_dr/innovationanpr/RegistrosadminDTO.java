@@ -5,40 +5,40 @@ package com.example.rn_dr.innovationanpr;
  */
 public class RegistrosadminDTO {
 
-    private String usuario;
-    private String password;
-    private String email;
-    private String rol;
+    private String Usuario;
+    private String Password;
+    private String Email;
+    private String Roles_idRoles;
 
     public String getUsuario() {
-        return usuario;
+        return Usuario;
     }
 
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
+    public void setUsuario(String Usuario) {
+        this.Usuario = Usuario;
     }
 
     public String getPassword() {
-        return password;
+        return Password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPassword(String Password) {
+        this.Password = Password;
     }
 
     public String getEmail() {
-        return email;
+        return Email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmail(String Email) {
+        this.Email = Email;
     }
 
-    public String getRol() {
-        return rol;
+    public String getRoles_idRoles() {
+        return Roles_idRoles;
     }
 
-    public void setRol(String rol) {
-        this.rol = rol;
+    public void setRoles_idRoles(String Roles_idRoles) {
+        this.Roles_idRoles = Roles_idRoles;
     }
 }

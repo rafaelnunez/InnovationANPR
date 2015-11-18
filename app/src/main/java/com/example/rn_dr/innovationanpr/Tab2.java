@@ -7,6 +7,7 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,11 +56,12 @@ public class Tab2 extends Fragment {
                     Reg.setUsuario(txtusuarior.getText().toString());
                     Reg.setPassword(txtcontraseñar.getText().toString());
                     Reg.setEmail(txtemailr.getText().toString());
-                    Reg.setRol("1");
+                    Reg.setRoles_idRoles("1");
                     Res = gsson.toJson(Reg);
                     PostAsyncrona Reg = new PostAsyncrona(Res);
                         /*Reg.SetContext(MainActivity.this);*/
                     String ban = Reg.execute("http://190.109.185.138/ANPR/api/Usuarios").toString();
+                    Log.d("sadainer",Res.toString());
                     Toast.makeText(getActivity().getApplicationContext(), "Entrada"+ban,
                             Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getActivity().getApplicationContext(), registra_parqueadero.class);
