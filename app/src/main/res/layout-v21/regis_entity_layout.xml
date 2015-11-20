@@ -58,7 +58,7 @@
                 android:layout_marginTop="30dp"  />
 
             <EditText
-                android:id="@+id/txtConfirPasswordr"
+                android:id="@+id/txtConfirmarContraseña"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:ems="10"

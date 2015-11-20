@@ -28,6 +28,7 @@ public class Tab2 extends Fragment {
     EditText txtusuarior;
     EditText txtcontraseñar;
     EditText txtemailr;
+    EditText txtConfirmarcontraseñar;
     @Override
     public View onCreateView(final LayoutInflater inflater, @Nullable final ViewGroup container, @Nullable Bundle savedInstanceState) {
         thiscontext = container.getContext();
@@ -36,6 +37,7 @@ public class Tab2 extends Fragment {
         final RegistrosadminDTO Reg = new RegistrosadminDTO();
         txtusuarior = (EditText) v.findViewById(R.id.txtUserr);
         txtcontraseñar = (EditText) v.findViewById(R.id.txtPasswordr);
+        txtConfirmarcontraseñar = (EditText) v.findViewById(R.id.txtConfirmarContraseña);
         txtemailr = (EditText) v.findViewById(R.id.txtCorreor);
 
         final Gson gsson;
@@ -53,24 +55,58 @@ public class Tab2 extends Fragment {
 
 
                     String Res = new String();
-                    Reg.setUsuario(txtusuarior.getText().toString());
-                    Reg.setPassword(txtcontraseñar.getText().toString());
-                    Reg.setEmail(txtemailr.getText().toString());
-                    Reg.setRoles_idRoles("1");
-                    Res = gsson.toJson(Reg);
-                    PostAsyncrona Reg = new PostAsyncrona(Res);
+                    if (validarClave(txtcontraseñar.getText().toString(),txtConfirmarcontraseñar.getText().toString())==true){
+                        Reg.setUsuario(txtusuarior.getText().toString());
+                        Reg.setPassword(txtcontraseñar.getText().toString());
+                        Reg.setEmail(txtemailr.getText().toString());
+                        Reg.setRoles_idRoles("1");
+                        Res = gsson.toJson(Reg);
+                        PostAsyncrona Regs = new PostAsyncrona(Res);
                         /*Reg.SetContext(MainActivity.this);*/
-                    String ban = Reg.execute("http://190.109.185.138/ANPR/api/Usuarios").toString();
-                    Log.d("sadainer",Res.toString());
-                    Toast.makeText(getActivity().getApplicationContext(), "Entrada"+ban,
-                            Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getActivity().getApplicationContext(), registra_parqueadero.class);
-                    startActivity(intent);
+                        String ban = null;
+                        try {
+                            ban = Regs.execute("http://190.109.185.138/ANPR/api/Usuarios").get();
+                            Verificacion(ban);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        } catch (ExecutionException e) {
+                            e.printStackTrace();
+                        }
+
+                    }
 
                 }
             }
         });
         return v;
+    }
+
+    private Boolean validarClave(String clave,String reclave){
+        Boolean validar=true;
+        if (clave.equals(reclave) == false){
+            validar = false;
+            Toast.makeText(getActivity().getApplication(),"La clave no coincide",
+                    Toast.LENGTH_SHORT).show();
+        }
+        return validar;
+    }
+
+    private void Verificacion(String ban){
+        String val1= "\"OK\"";
+        String val3="\"YR\"";
+
+        if (ban.equals(val3)){
+            Toast.makeText(getActivity().getApplication(),"El Usuario se encuentra registrado",
+                    Toast.LENGTH_SHORT).show();
+
+        }else {
+
+            Toast.makeText(getActivity().getApplication(),"Usuario registrado Exitosamente",
+                    Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getActivity().getApplicationContext(), registra_parqueadero.class);
+            startActivity(intent);
+        }
+
     }
 
     public static boolean verificaConexion(Context ctx) {
